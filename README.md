@@ -1,19 +1,17 @@
-# geoserver-docker
+# Windows docker image of Geoserver with SQL Server plugin
 
-Geoserver Windows + SQL Server plugin docker image
+- Geoserver v2.23.0
+- Geoserver SQL Server extension v2.23.x
 
-- Geoserver v2.19.2
-- Geoserver SQL Server extension v2.19.2 ([geoserver-2.19.2-sqlserver-plugin.zip](https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.2/extensions/))
-
-Build image:
+## Build image
 
 `docker build -t geoserver .`
 
-Start container:
+## Run container:
 
-`docker run -p 8080:8080 -d filoa86/geoserver:latest`
+`docker run -p 8080:8080 -d`
 
-Default credentials:
+## Default credentials:
 
 ```
 Username: admin
